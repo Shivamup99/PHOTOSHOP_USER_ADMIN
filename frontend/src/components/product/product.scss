@@ -1,0 +1,204 @@
+.product-item{
+  overflow: hidden !important;
+  padding: 5px;
+  margin-bottom: 20px;
+  .product-card{
+    width: 290px;
+    height: 400px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 4px;
+    img{
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        padding: 5px;
+        border-radius: 4px;
+        display: block;
+    }
+  }
+  .product-box{
+    margin-top: -160px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    width: 280px;
+    h2{
+        width: 100%;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        text-shadow: 2px 3px 5px #000000;
+    }
+    p{
+        display: flex;
+        align-items: center;
+        font-size: larger;
+        font-weight: 600;
+        gap:5px;
+        .MuiSvgIcon-root{
+            width: 18px;
+            height: 18px;
+            color: #BB1B01;
+        }
+    }
+  }
+  .desc{
+    padding: 1px 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    white-space: nowrap; 
+    width: 290px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+  .product-btn{
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    gap:100px;
+    width: 280px;
+    .buy{
+        padding: 5px;
+        width: 100px;
+        font-size: medium;
+        letter-spacing: 1px;
+        font-weight: 500;
+        cursor: pointer;
+        background-color: #BB1B01;
+        border: none;
+        outline: none;
+        color: #fff;
+        transition: .3s ease-in-out;
+        text-align: center;
+        &:hover{
+           background-color: #b01f09eb;
+           transform: scale(1.01);
+           color: whitesmoke;
+        }
+    }
+    .view{
+        padding: 5px;
+        width: 100px;
+        font-size: medium;
+        letter-spacing: 1px;
+        font-weight: 500;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color: #fff;
+        text-align: center;
+        background-color: rgba(40, 50, 193, 0.658);
+        transition: .3s ease-in-out;
+        &:hover{
+           background-color: rgb(40, 50, 193);
+           transform: scale(1.01);
+           color: whitesmoke;
+        }
+    }
+  }
+}
+
+// product detail css
+
+.product-detail{
+    padding: 20px;
+    flex: 1;
+    .detail-row{
+        display: flex;
+        gap:30px;
+        flex: 1;
+        .product-detail-img{
+            flex: .5;
+            width: 60%;
+            height: 400px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+        }
+        .row{
+            flex: .5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 400px;
+            justify-content: space-around;
+            h2{
+                font-size: 46px;
+                color: #B1B0BB;
+                letter-spacing: 1.1px;
+                text-transform: capitalize;
+                margin-bottom: 15px;
+            }
+            h3{
+                display: flex;
+                align-items: center;
+                font-size: 36px;
+                color: #BB1B01;
+                margin-bottom: 10px;
+                .MuiSvgIcon-root{
+                    height: 22px;
+                    width: 22px;
+                    margin-right: 4px;
+                }
+            }
+            p{
+                width: 94%;
+                margin-bottom: 10px;
+                letter-spacing: 1.1px;
+                font-size: 13px;
+                font-weight: 400;
+                text-align: center;
+            }
+            span{
+                font-size: large;
+                font-weight: 500;
+                letter-spacing: 1.1px;
+                color: gray;
+                margin-bottom: 14px;
+            }
+            h6{
+                font-size: medium;
+                font-weight: 700;
+                letter-spacing: 1.1px;
+                margin-bottom: 12px;
+                color: crimson;
+            }
+            .detail-cart{
+                padding: 12px;
+                width: 140px;
+                background-color: rgba(22, 44, 158, 0.676);
+                text-align: center;
+                margin-top: 10px;
+                cursor: pointer;
+                color: white;
+                letter-spacing: 1.1px;
+                font-size: 15px;
+                font-weight: 600;
+                transition: .3s ease-in-out;
+                &:hover{
+                    background-color: rgb(40, 50, 193);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .related-product{
+        padding: 30px;
+        text-align: center;
+        font-size: larger;
+        font-weight: 600;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+        color: #9e2b11ea;
+        text-decoration: underline;
+        margin-top: 20px;
+    }
+    .related-item{
+        display: flex;
+        gap:40px;
+    }
+}
